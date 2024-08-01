@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  animation: hello 0.5s 1 alternate;
+}
+.inputs * {
+  width: 100%;
+}
+.heading {
+  text-align: center;
+}
+.inputs input {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.inputs {
+  animation: hello 1s alternate;
+  animation-iteration-count: 1;
+  transition: 0.3s;
+  width: 38rem;
+}
+.container {
+  position: relative;
+  transition: 0.3s;
+  animation: hello 0.5s alternate;
+}
+@keyframes hello {
+  25% {
+    margin-top: 60px;
+  }
+  50% {
+    margin-top: 0px;
+  }
+  75% {
+    margin-top: 30px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,35 @@
+.nav {
+  position: absolute;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-wrap: nowrap;
+  gap: 128px;
+  width: 70%;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 25px;
+  animation: nav 1 0.3s alternate;
+}
+.nav a {
+  transition: 0.3s;
+  color: rgb(238, 238, 238);
+}
+label {
+}
+p {
+  color: rgb(238, 238, 238);
+}
+.vid {
+  display: flex;
+  gap: 3px;
+}
+@keyframes nav {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    margin-bottom: translateY(0px);
+  }
+}
